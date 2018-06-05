@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For</title>
+</head>
+<body>
+    <h1>For</h1>
+
+    <p id="salida"></p>
+
+    <button onclick="mostrarEquipos()">Mostrar Equipos</button>
+</body>
+<script>
+    function mostrarEquipos() {
+        var texto ="Equipos: <br>";
+
+        var equipos = ["Liverpool", "Barcelona", "Juventus", "Real Madrid", "Roma"];
+
+        for (var i=0; i < equipos.length; i++) {
+            texto+=equipos[i]+" <br> ";
+        }
+
+        document.getElementById("salida").innerHTML = texto;
+    }
+</script>
+</html>

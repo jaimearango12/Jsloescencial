@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>programacion oriwentada a objetos</title>
+</head>
+<body>
+    <h1>POO JavaScript</h1>
+
+    <p id="saludo1"></p>
+    <p id="saludo2"></p>
+
+    <button onclick="miFuncion1()"> Saludo 1</button>
+    <button onclick="miFuncion2()"> Saludo 2</button>
+</body>
+<script>
+    //primero vamos a definir la CLASE persona
+    function Persona(nombre, edad, ciudad, email) {
+        
+        //ahora setiamos los ATRIBUTOS (propiedades) de la clase persona con los parametros recibidos
+        this.nombre = nombre; //this hace referancia al OBJETO o FUNCION que se esta usando
+        this.edad = edad;
+        this.ciudad = ciudad;
+        this.email = email;
+
+        //Metodo saludar() propio de la clase persona
+        this.saludar = function () {
+            document.getElementById("saludo1").innerHTML = "Hola mi nombre es: " + this.nombre + " y mi edad es: " + this.edad;
+        };
+    }
+    // con eso ya tenemos la CLASE persona y mostramos como se saluda
+
+    //AHORA CREAREMOS UN OBJETO de la clase persona
+    var persona = new Persona ("Carlos Morales","24", "Cartagena", "carlos@hotmail.com");
+
+    function miFuncion1(argument) {
+        persona.saludar(); //invocacion del metodo saludar() a traves del objeto persona
+    } 
+
+    function miFuncion2(argument){ //aca se va a accader a los atributos email y correo electronico
+        document.getElementById("saludo2").innerHTML= "soy de : " + persona.ciudad + " y mi correo es " + persona.email;
+    } //PRIMERO DEFINIMOS LA CLASE PERSONA CON EL METODO SALUDAR Y EN EL SEGUNDO LA INSTANCIAMOS A TRAVES E UN OBJETO QUE TAMBIEN LO LLAMAMOS PERNOA
+</script>
+</html>

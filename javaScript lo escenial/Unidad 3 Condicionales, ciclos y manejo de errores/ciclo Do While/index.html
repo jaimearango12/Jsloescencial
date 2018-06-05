@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Do While</title>
+</head>
+<body>
+    <h1>Do While</h1>
+
+    <h2>Conteo del 50 al 100</h2>
+
+    <p id="salida"></p>
+
+    <button onclick="conteo()">Iniciar Conteo </button>
+
+</body>
+<script>
+    function conteo(){
+        var texto= "";
+        var contador= 50;
+
+        do{ //al iniciar con do se obliga a que el texto se ejecute al menos una vez
+            texto+=contador+"<br>"; //el br es para que se muestre como una lista
+            contador++;
+        }while(contador <= 100);
+
+        document.getElementById("salida").innerHTML = texto;
+    }
+</script>
+</html>

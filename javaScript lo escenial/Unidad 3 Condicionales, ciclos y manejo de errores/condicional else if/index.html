@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicional else if</title>
+</head>
+<body>
+    <h1>Else IF</h1>
+
+    <p id="color"></p>
+
+    <button onclick="verificarColor()">Verificar Color</button>
+
+
+</body>
+<script>
+    var color = "Azul";
+
+    function verificarColor() {
+        if(color == "Rojo"){
+            document.getElementById("color").innerHTML = "El color es Rojo";
+        } else if (color == "Azul"){
+            document.getElementById("color").innerHTML = "El color es Azul";
+        } else{
+            document.getElementById("color").innerHTML = "sin color";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>los espacios en blanco</title>
+</head>
+<body>
+    <h1>Espacios en blanco</h1>
+
+    <p id="color1"></p>
+    <p id="color2"></p>
+
+    <h1>saltos de linea</h1>
+
+    <div id="miDiv"></div>
+</body>
+<script>
+    //Espacios en blanco
+    var color1 ='rojo';
+    var color2=         "azul";
+
+    document.getElementById("color1").innerHTML = color1;
+    document.getElementById('color2').innerHTML = color2;
+
+    // Saltos de linea
+    document.getElementById("miDiv").innerHTML = "hola soy un div" + " con contenido dinamico;"
+</script>
+</html>

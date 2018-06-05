@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>console.table</title>
+</head>
+<body>
+    <h1>Utilizando Console.table</h1>  
+</body>
+<script>
+    var notas= [
+        [4.5, 3.5, 2.1, 4.6, 3.6],
+        [3.2, 4.3, 5.0, 2.5, 2.9],
+        [4.4, 1.5, 2.7, 3.5, 3.9]
+    ];
+
+    var productos = [{
+        codigo: "001",
+        producto:"Camisa",
+        precio: 50000
+    },{
+        codigo: "002",
+        producto: "Gorra",
+        precio: 40000
+    },{
+        codigo: "003",
+        producto: "zapatos",
+        precio: 60000
+    }];
+
+    console.table(productos);
+    console.table(notas);
+</script>
+</html>

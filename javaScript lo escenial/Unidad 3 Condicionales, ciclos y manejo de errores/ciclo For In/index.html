@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For In</title>
+</head>
+<body>
+    <h1>For In</h1>
+
+    <p id="salida"></p>
+
+    <button onclick="mostrar_producto()">Mostrar Producto</button>
+</body>
+<script>
+    function mostrar_producto(){
+        var texto = "Producto: <br>";
+
+        var producto = {
+            codigo: "001",
+            nombre: "lapiz",
+            precio: 2000
+        };
+
+        var x;
+
+        for(x in producto) {
+            texto+=producto[x]+"<br>";
+        }
+
+        document.getElementById("salida").innerHTML = texto;
+    }
+</script>
+</html>

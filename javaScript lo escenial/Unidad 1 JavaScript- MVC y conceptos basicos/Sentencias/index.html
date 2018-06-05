@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Sentencias</h1>
+
+    <p id="resultado1"></p>
+    <p id="mensaje"></p>
+
+</body>
+<script>
+    //sentencias
+    var u = 8 - 4;
+    var p = 3 * u;
+
+    document.getElementById('resultado1').innerHTML = p;
+
+    //sentencia agrupada en bloque a partir de una funcion
+    function miFuncion (argument) {
+        var hola = 'I love JS';
+        document.getElementById('mensaje').innerHTML = hola;
+    }
+
+    miFuncion();
+
+</script>
+</html>

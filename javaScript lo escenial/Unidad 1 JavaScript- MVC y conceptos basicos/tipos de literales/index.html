@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tipos de literales</title>
+</head>
+<body>
+    <h1>Literales Númericos</h1>
+
+    <p id="numerico1"></p>
+    <p id="numerico2"></p>
+    <p id="numerico3"></p>
+
+    <h1>Literales de cadena</h1>
+
+    <p id="cadena1"></p>
+    <p id="cadena2"></p>
+    <p id="cadena3"></p>
+
+    <h1>Literales de expresion</h1>
+
+    <p id="expresion1"></p>
+    <p id="expresion2"></p>
+    <p id="expresion3"></p>
+
+    <h1>Literales de Funcion</h1>
+
+    <p id="funcion"></p>
+
+</body>
+<script>
+    document.getElementById("numerico1").innerHTML = 4343;
+    document.getElementById("numerico2").innerHTML = 23.4;
+    document.getElementById("numerico3").innerHTML = 526e2;
+
+    document.getElementById("cadena1").innerHTML = "Maria Paula";
+    document.getElementById("cadena2").innerHTML = "¿como estas?";
+    document.getElementById("cadena3").innerHTML = 'hola mundo!!!';
+
+    document.getElementById("expresion1").innerHTML = 2 + 3;
+    document.getElementById("expresion2").innerHTML = 5 * 8;
+    document.getElementById("expresion3").innerHTML = 3 / 3 + 99;
+
+    function miFuncion() {
+        document.getElementById("funcion").innerHTML = "mi funcion!";
+    }
+
+    miFuncion();
+</script>
+</html>

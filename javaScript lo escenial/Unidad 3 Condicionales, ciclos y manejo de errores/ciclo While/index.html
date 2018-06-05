@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>While</title>
+</head>
+<body>
+    <h1>While</h1>
+    <h2>Conteo del 1 al 50</h2>
+
+    <p id="salida"></p>
+
+    <button onclick="conteo()">Iniciar Conteo</button>
+</body>
+<script>
+    function conteo () {
+        var contador = 1;
+        var texto ="";
+
+        while(contador<=50) {
+            texto+=contador+"<br>";
+            contador++
+        }
+        document.getElementById("salida").innerHTML= texto;
+
+    }
+</script>
+</html>
