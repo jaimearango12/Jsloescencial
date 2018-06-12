@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Onmuoseover</title>
+</head>
+<body> 
+    <div onmouseover="entrada(this)" style="background-color: #f0f313;width: 170px;height: 20px;padding: 40px;">
+        Pasar el mouse por AQUI.
+    </div> 
+    <script>
+        function entrada(obj){ //en onmouseover="entrada(this)" el THIS se usa le mande el div donde estaba el texto
+            obj.innerHTML= "NextUniversity";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Construyendo un formulario</title>
+</head>
+<body>
+    <h4>Formulario de registro de usuario</h4>
+    <table>
+        <form id="formulario">
+            <tr>
+                <td><label >Nombres: </label></td>
+                <td><input type="text" id="nombres" name="nombres"></td>
+            </tr>
+            <tr>
+                <td><label>Apellidos: </label></td>
+                <td><input type="text" name="apellidos" id="apellidos"></td>
+            </tr>
+            <tr>
+                <td><label>Identificacion: </label></td>
+                <td><input type="text" id="identificacion" name="identificacion"></td>
+            </tr>
+            <tr>
+                <td><label>Sexo: </label></td>
+                <td><select name="sexo" id="sexo">
+                    <option value="" name=""></option>
+                    <option value="masculino" name="masculino"> Masculino </option>
+                    <option value="femenino" name="femenino"> Femenino </option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Email: </label></td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>Teléfono: </label></td>
+                <td><input type="text" id="telefono" name="telefono"></td>
+            </tr>
+            <tr>
+                <td><label>Direccion: </label></td>
+                <td><input type="text" name="direccion" id="direccion"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="enviar" value="Enviar" name="enviar"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

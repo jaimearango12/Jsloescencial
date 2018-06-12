@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mi primer json</title>
+</head>
+<body>
+    <p id="empresas"></p>
+</body>
+<script>
+    var jsonText = '{ "empresas": ['+
+    '{"nit":"3432-1", "nombre":"TCC", "telefono" : "33324993", "email":  "tcc@hotmail.com"},'+
+    '{"nit":"3433-1", "nombre":"TSS", "telefono" : "33322459", "email": "tss@hotmail.com"},'+
+    '{"nit":"5555-1", "nombre":"Movistar", "telefono" : "3254993", "email": "movistar@hotmail.com"},'+
+    '{"nit":"3692-1", "nombre":"Puma", "telefono" : "33312393", "email": "Puma@hotmail.com"},'+
+    '{"nit":"3732-1", "nombre":"Adidas", "telefono" : "33369993", "email": "Adidas@hotmail.com"},'+
+    '{"nit":"7832-1", "nombre":"TCH", "telefono" : "33312393", "email": "TCH@hotmail.com"},'+
+    '{"nit":"3532-1", "nombre":"Nike", "telefono" : "31424993", "email": "Nike@hotmail.com"},'+
+    '{"nit":"9532-1", "nombre":"Dell", "telefono" : "33315993", "email": "dell@hotmail.com"},'+
+    '{"nit":"1532-1", "nombre":"Apple", "telefono" : "33321993", "email": "apple@hotmail.com"},'+
+    '{"nit":"5332-1", "nombre":"Xiaomi", "telefono" : "31234993", "email": "mi@hotmail.com"}'+ // OJO!! -->AL FINAL DE JSON NO PUEDE HAVER COMA
+    ']}';
+
+    var jsObj = JSON.parse(jsonText);
+
+    function leerJSON (json) {
+        var out="----------Empresas---------<br>";
+        var i;
+        for(i=0;i<json.empresas.length;i++){ //se coloca json.empresas poeque ese es el objeto
+            out+="Nit: "+ json.empresas[i].nit+' - '+ "Nombre: "+json.empresas[i].nombre+' - '+
+            "Telefono: "+json.empresas[i].telefono+' - '+"E-mail: "+json.empresas[i].email + "<br>"; 
+        }
+        document.getElementById("empresas").innerHTML = out;
+    }
+    leerJSON(jsObj);
+</script>
+</html>
